@@ -1,0 +1,27 @@
+CREATE TABLE StockTransactions(
+StockTransactionID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+StockName VARCHAR,
+QTYBought DECIMAL(3)// change thi maybe,
+BoughtAt VARCHAR or decimal again
+QTYSOLD VARCHAR,
+TotalSold INT(11),
+DateBought VARCHAR,
+DateSold VARCHAR,
+TotalSpent DOUBLE(2),
+Fees DOUBLE(2),
+Notes VARCHAR,
+PurchaseLocation VARCHAR,
+WholeCoinWorth DOUBLE(2), 
+BoughtOrSold VARCHAR,
+Rent VARCHAR
+
+
+
+
+
+
+
+
+
+
+);

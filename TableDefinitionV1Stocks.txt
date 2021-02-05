@@ -1,27 +1,12 @@
 CREATE TABLE StockTransactions(
-StockTransactionID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-StockName VARCHAR,
-QTYBought DECIMAL(3)// change thi maybe,
-BoughtAt VARCHAR or decimal again
-QTYSOLD VARCHAR,
-TotalSold INT(11),
-DateBought VARCHAR,
-DateSold VARCHAR,
-TotalSpent DOUBLE(2),
-Fees DOUBLE(2),
-Notes VARCHAR,
-PurchaseLocation VARCHAR,
-WholeCoinWorth DOUBLE(2), 
-BoughtOrSold VARCHAR,
-Rent VARCHAR
-
-
-
-
-
-
-
-
-
+StockTransactionID INT(11),NOT NULL AUTO_INCREMENT PRIMARY KEY, // This will be primary key 
+StockName VARCHAR, // name or code of stock 
+QTY DECIMAL(3),// change this maybe, // amound purchased bought or exchanged
+UnitValue or decimal again // value of one whole coin or one unit of stock 
+Date // date object maybe, // date pruchased
+TotalValue Int(11),// possibly agian not sure here  this will be total bought or sold for
+Fees Int(11), // moneyi vlaue  // any fees assocated with transaction
+Notes VARCHAR(500), // any special notes
+Location,  // what site purchased on
 
 );

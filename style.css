@@ -41,7 +41,7 @@ body {
     justify-content: center;
 }
 #topBtn{
-
+    z-index: 2; /* this is done to prevent absolute positioned corners from causing problems */
     text-align: center;
     
     background: #3D3333;
@@ -55,16 +55,22 @@ body {
      height: 39px;
      border-radius: 5px;
      margin-top: 1em;
+     padding: 0px;
 
 }
 
+#topBtn:hover {
+    background:rgba(86, 86, 86, 1);
+}
+
 #bottomBtn {
+    z-index: 2; /* this is done to prevent absolute positioned corners from causing problems */
     text-align: center;
     border: none;
     background: #3D3333;
     font-style: normal;
     font-weight: normal;
-    font-size: 19px;
+    font-size: 15px;
     line-height: 24px;
     color: #FCFCFC;
     background: linear-gradient(180deg, rgba(222, 101, 63, 0.97) 0%, rgba(222, 101, 63, 0.97) 80.73%, rgba(222, 101, 63, 0.97) 99.99%, rgba(222, 101, 63, 0) 100%);
@@ -73,4 +79,8 @@ body {
     height: 39px;
     border-radius: 5px;
     margin-top: 2em;
+}
+
+#bottomBtn:hover {
+   background: rgba(228, 175, 158, 1);
 }

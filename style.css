@@ -103,9 +103,12 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
-    body {
-      background-color: lightblue;
-    }
-   
+   #topLeftCorner {
+       content:url("img/desktopTopLeft.png");
+   }
+
+   #bottomRightCorner {
+       content:url("img/desktopBottomRight.png");
+   }
     
   }

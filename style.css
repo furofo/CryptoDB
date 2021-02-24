@@ -82,7 +82,9 @@ body {
 }
 
 .innerCenter {
-    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #title {
@@ -93,7 +95,7 @@ body {
     font-size: 100px;
     line-height: 30px;
     color: #FCFBFB;
-    
+    flex-basis: 100%;
     
 }
 
@@ -105,6 +107,7 @@ body {
     font-size: 60px;
     line-height: 24px;
     margin-top: 1.5em;
+    flex-basis: 100%;
     color: #FCFCFC;
 }
 .center {
@@ -122,7 +125,6 @@ body {
     line-height: 24px;
     color: #FCFCFC;
     border: none;
-    
      border-radius: 5px;
      margin-top: 4em;
      padding: 30px;
@@ -151,6 +153,21 @@ body {
     margin-top: 2em;
 }
 
+#topFlex {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#bottomFlex {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 #bottomBtn:hover {
    background: rgba(228, 175, 158, 1);
 }
@@ -165,7 +182,62 @@ body {
    }
 
    #title {
-       margin-top: 1.5em;
+       
    }
+
+
+   #topFlex {
+    flex-basis: 30%;
+    display: flex;
+    justify-content:  flex-end;
+    margin-right: 5%;
+    margin-left: 0%;
+   
+  }
+#bottomFlex {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 0%;
+    
+}
+
+#topBtn{
+    
+    background: #3D3333;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    padding: 40px;
+    line-height: 24px;
+    width: 8em;
+    color: #FCFCFC;
+    border: none;
+     border-radius: 5px;
+     margin-top: 2.6em;
+     flex-basis: 90%;
+     
+}
+
+#bottomBtn {
+   
+    flex-basis: 90%;
+    background: #3D3333;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    padding: 40px;
+    line-height: 24px;
+    width: 8em;
+    color: #FCFCFC;
+    background: linear-gradient(180deg, rgba(222, 101, 63, 0.97) 0%, rgba(222, 101, 63, 0.97) 80.73%, rgba(222, 101, 63, 0.97) 99.99%, rgba(222, 101, 63, 0) 100%);
+    filter: blur(4px), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    margin-top: 2.6em;
+}
+
+
+
     
   }

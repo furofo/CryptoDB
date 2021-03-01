@@ -74,7 +74,9 @@ html, body{
 body {
     background-color: black;
     height: 100%;
-    background-image: url(img/BigImg.png);
+}
+#startBody {
+ background-image: url(img/BigImg.png);
 }
 
 .vertHorizCenter {

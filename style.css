@@ -181,6 +181,7 @@ body {
 
 
 /* login.html css */
+
 #loginTitle {
     font-family:'Roboto', cursive;
     font-size: 40px;
@@ -236,6 +237,17 @@ input {
     padding: 15px;
     width: 180px;
 }
+
+.reset {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 17px;
+    flex-basis: 100%;
+    margin-top: 1.5em;
+}
+
+
 
 /* end of login.css styles */
 

@@ -93,7 +93,7 @@ body {
     flex-wrap: wrap;
 }
 
-#title {
+.title {
     text-align: center;
     font-family: 'Caveat', cursive;
     font-style: normal;
@@ -105,7 +105,7 @@ body {
     
 }
 
-#titleSubheading {
+.titleSubheading {
     font-family: 'Caveat', cursive;
     text-align: center;
     font-style: normal;
@@ -177,6 +177,15 @@ body {
 #bottomBtn:hover {
    background: rgba(228, 175, 158, 1);
 
+}
+
+
+/* login.html css */
+#loginTitle {
+    font-size: 50px;
+}
+#loginSubHeading {
+    font-size: 25px;
 }
 
 

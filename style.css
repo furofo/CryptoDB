@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/*html resets */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,7 +48,10 @@ table {
 	border-spacing: 0;
 }
 
-#topLeftCorner {
+/* end of browser resets */
+
+/* these are wavy orange images */
+#topLeftCorner {    
     position: absolute;
     top: 0px;
     left: 0px;
@@ -59,7 +62,6 @@ table {
     overflow: hidden;
 }
 
-
 #bottomRightCorner {
     position: absolute;
     bottom: -20px;
@@ -67,6 +69,8 @@ table {
     overflow: hidden;
     height: 40%;
 }
+
+/* end of wavy orange images */
 html, body{
     width: 100%;
     height: 100%;
@@ -75,11 +79,11 @@ body {
     background-color: black;
     height: 100%;
 }
-#startBody {
+#startBody { /* do not want backgroudn image on every page so separate id for when want to use it */
  background-image: url(img/BigImg.png);
 }
 
-.vertHorizCenter {
+.vertHorizCenter { /* this is to get all content aligned veritically and horizontally */
     display:flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +91,7 @@ body {
     height: 100%;
 }
 
-.innerCenter {
+.innerCenter { /* everything with this class will lign up horizontally and wrap down when i need it to */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -116,10 +120,10 @@ body {
     flex-basis: 100%;
     color: #FCFCFC;
 }
-.center {
+/*.center {
     display: flex;
     justify-content: center;
-}
+}*/
 .topBtn{
     z-index: 2; /* this is done to prevent absolute positioned corners from causing problems */
     text-align: center;

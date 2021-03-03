@@ -120,10 +120,7 @@ body {
     flex-basis: 100%;
     color: #FCFCFC;
 }
-/*.center {
-    display: flex;
-    justify-content: center;
-}*/
+
 .topBtn{
     z-index: 2; /* this is done to prevent absolute positioned corners from causing problems */
     text-align: center;

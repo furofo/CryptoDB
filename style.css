@@ -210,17 +210,19 @@ body {
 
 input {
     height: 2em;
+    width: 11em;
+    margin-right: 50px;
     -ms-transform: skewX(-20deg);
   -webkit-transform: skewX(-20deg);
   transform: skewX(-20deg);
-  margin-right: 30px;;
+ 
 }
+
+
 
 .inputLabelParagraph {
     display: inline;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
@@ -265,7 +267,7 @@ input {
     }
  
  
-    #topFlex {
+    .topFlex {
      flex-basis: 30%;
      display: flex;
      justify-content:  flex-end;
@@ -274,11 +276,11 @@ input {
     
    }
  
-   #title {
+   .title {
        font-size: 80px;
        padding-top: .3em;
    }
- #bottomFlex {
+ .bottomFlex {
      flex-basis: 30%;
      display: flex;
      justify-content: center;
@@ -287,7 +289,7 @@ input {
      
  }
  
- #topBtn{
+ .topBtn{
      
      background: #3D3333;
      font-style: normal;
@@ -300,13 +302,13 @@ input {
      border: none;
       border-radius: 5px;
       margin-top: 2.6em;
-      flex-basis: 90%;
+      /*flex-basis: 90%;*/
       
  }
  
- #bottomBtn {
+ .bottomBtn {
     
-     flex-basis: 90%;
+     /*flex-basis: 90%;*/
      background: #3D3333;
      font-style: normal;
      font-weight: normal;
@@ -326,7 +328,10 @@ input {
      
    }
 
-
+   @media screen and (orientation:landscape) and (max-device-width: 1100px) {
+    /* Your CSS Here*/
+    
+ }
 
    @media only screen and (min-width: 1280px) {
 
@@ -344,12 +349,12 @@ input {
         right: 0px;
     }
 
-    #bottomBtn{
+    .bottomBtn{
         padding: 40px;
         font-size: 40px;
     }
 
-    #topBtn {
+    .topBtn {
         padding: 40px;
         font-size: 40px;
     }

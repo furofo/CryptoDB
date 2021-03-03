@@ -122,8 +122,8 @@ body {
 }
 
 .topBtn{
-    z-index: 2; /* this is done to prevent absolute positioned corners from causing problems */
-    text-align: center;
+    z-index: 2; /* this is done to prevent absolute positioned corners from causing problems*/
+    text-align: center;/*otherwise there margins interfer */
     width: 240px;
     background: #3D3333;
     font-style: normal;
@@ -144,7 +144,7 @@ body {
 
 .bottomBtn {
     z-index: 2; /* this is done to prevent absolute positioned corners from causing problems */
-    text-align: center;
+    text-align: center; /*otherwise there margins interfer */
     border: none;
     background: #3D3333;
     font-style: normal;
@@ -160,14 +160,14 @@ body {
     margin-top: 2em;
 }
 
-.topFlex {
+.topFlex { /* flex containers to make moving elements simpler with screen size */
     flex-basis: 40%;
     display: flex;
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
 }
-.bottomFlex {
+.bottomFlex { /* flex containers to make moving elements simpler with screen size */
     flex-basis: 40%;
     display: flex;
     justify-content: center;
@@ -181,7 +181,7 @@ body {
 }
 
 
-/* login.html css */
+/* login.html custom css */
 
 #loginTitle {
     font-family:'Roboto', cursive;
@@ -219,8 +219,6 @@ input {
  
 }
 
-
-
 .inputLabelParagraph {
     display: inline;
     text-align: center;
@@ -249,12 +247,51 @@ input {
     flex-basis: 100%;
     margin-top: 1.5em;
 }
-
-
-
 /* end of login.css styles */
 
-@media only screen and (min-width: 1000px) {
+
+/* media queires */
+
+@media screen and (orientation:landscape) and (max-device-width: 1100px) { /* media query for landscape on mobile */
+    #topLeftCorner {
+        width: 50%;
+    }
+ 
+    #bottomRightCorner {
+        width: 50%;
+    }
+    
+     .topFlex {
+        flex-basis: 30%;
+        justify-content: flex-end;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+ 
+    .bottomFlex {
+        flex-basis: 30%;
+        justify-content: flex-start;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+     .topBtn {
+        margin-top: 1.5em;
+        width: 225px;
+        font-size: 45px;
+    }
+ 
+    .bottomBtn {
+        margin-top: 1.5em;
+        width: 225px;
+        font-size: 45px;
+    }
+     
+  }
+
+
+
+@media only screen and (min-width: 1000px) { /* small sized monitors */
     #topLeftCorner {
         content:url("img/desktopTopLeft.png");
         left: -11em;
@@ -329,50 +366,15 @@ input {
      
    }
 
-   @media screen and (orientation:landscape) and (max-device-width: 1100px) { /* media query for landscape on mobile */
-   #topLeftCorner {
-       width: 50%;
-   }
+  
 
-   #bottomRightCorner {
-       width: 50%;
-   }
-   
-    .topFlex {
-       flex-basis: 30%;
-       justify-content: flex-end;
-       margin-left: 5%;
-       margin-right: 5%;
-   }
-
-   .bottomFlex {
-       flex-basis: 30%;
-       justify-content: flex-start;
-       margin-left: 5%;
-       margin-right: 5%;
-   }
-   
-    .topBtn {
-       margin-top: 1.5em;
-       width: 225px;
-       font-size: 45px;
-   }
-
-   .bottomBtn {
-       margin-top: 1.5em;
-       width: 225px;
-       font-size: 45px;
-   }
-    
- }
-
-   @media only screen and (min-width: 1280px) {
+   @media only screen and (min-width: 1280px) { /* medium sized monitors */
 
     #topLeftCorner {
         left: -10em;
     }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) { /* large monitors */
 
     #topLeftCorner {
         left: -50px;

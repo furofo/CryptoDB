@@ -328,8 +328,40 @@ input {
      
    }
 
-   @media screen and (orientation:landscape) and (max-device-width: 1100px) {
-    /* Your CSS Here*/
+   @media screen and (orientation:landscape) and (max-device-width: 1100px) { /* media query for landscape on mobile */
+   #topLeftCorner {
+       width: 50%;
+   }
+
+   #bottomRightCorner {
+       width: 50%;
+   }
+   
+    .topFlex {
+       flex-basis: 30%;
+       justify-content: flex-end;
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+
+   .bottomFlex {
+       flex-basis: 30%;
+       justify-content: flex-start;
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+   
+    .topBtn {
+       margin-top: 1.5em;
+       width: 225px;
+       font-size: 45px;
+   }
+
+   .bottomBtn {
+       margin-top: 1.5em;
+       width: 225px;
+       font-size: 45px;
+   }
     
  }
 

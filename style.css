@@ -124,17 +124,17 @@ body {
 .topBtn{
     z-index: 2; /* this is done to prevent absolute positioned corners from causing problems*/
     text-align: center;/*otherwise there margins interfer */
-    width: 240px;
+    width: 320px;
     background: #3D3333;
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 24px;
     color: #FCFCFC;
     border: none;
      border-radius: 5px;
      margin-top: 4em;
-     padding: 30px;
+     padding: 50px;
 
 }
 
@@ -149,10 +149,10 @@ body {
     background: #3D3333;
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
-    padding: 30px;
+    font-size: 60px;
+    padding: 50px;
     line-height: 24px;
-    width: 240px;
+    width: 320px;
     color: #FCFCFC;
     background: linear-gradient(180deg, rgba(222, 101, 63, 0.97) 0%, rgba(222, 101, 63, 0.97) 80.73%, rgba(222, 101, 63, 0.97) 99.99%, rgba(222, 101, 63, 0) 100%);
     filter: blur(4px), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -276,14 +276,16 @@ input {
     }
     
      .topBtn {
+        padding: 35px;
         margin-top: 1.5em;
-        width: 225px;
+        width: 240px;
         font-size: 45px;
     }
  
     .bottomBtn {
+        padding: 35px;
         margin-top: 1.5em;
-        width: 225px;
+        width: 240px;
         font-size: 45px;
     }
      

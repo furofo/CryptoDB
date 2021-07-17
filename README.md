@@ -5,3 +5,6 @@ Data is input in Excel
 downloaded as csv
 Will be read by python and put in mysql database
 make an android app for final version
+
+#IMPORTANT
+Currently as of 07/16/2021, This needs config php and local host client right now with how to connect to database in it.

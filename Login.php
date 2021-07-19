@@ -1,20 +1,22 @@
+
 <?php
-// Initialize the session
-session_start();
- 
+//initalize the session
+    session_start();
+    
+    
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
+    header("location: loggedin.php");
     exit;
 }
  
 // Include config file
 require_once "config.php";
- 
+
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
- 
+
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
@@ -87,39 +89,51 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
-?>
  
-<!DOCTYPE html>
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
-            </div>    
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control">
-                <span class="help-block"><?php echo $password_err; ?></span>
+    <img id = "topLeftCorner" src ="img/topLeftCorner.png"> <!-- top and bottom wavy images-->
+    <img id = "bottomRightCorner" src = "img/bottomRightCorner.png"> </img>
+    <div class = 'vertHorizCenter'>
+
+        <div class = "innerCenter">
+            <h1 class = "title" id = "loginTitle"> LOGIN</h1>
+            <h2 class = "titleSubheading" id = "loginSubheading"> EL PSY CONGROO</h2>
+
+
+            <!-- need to make this  aform for submiting stuff too -->
+            <form id ="loginForm">
+            <div class = "inputLabel">
+
+                <label class = "inputLabelParagraph" for = "username">Username:</label>
+                <input type = "text" name = "username" id = "username">
             </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+            
+                
+            <div class = "inputLabel">
+                <label class = "inputLabelParagraph" for = "password">Password:</label>
+                <input type = "password" name = "password" id = "password">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-        </form>
-    </div>    
+            <div class = "formButtons">
+                <button class ="topBtn" id = "topBtnLogin">Sign Up</button>
+                <button type = "submit" class = "bottomBtn" id = "bottomBtnLogin">Sign In</button>
+            </div>
+            <h3 class = "reset">Reset?</h3>
+            </form>
+        </div>
+    </div>
+
+
 </body>
 </html>
